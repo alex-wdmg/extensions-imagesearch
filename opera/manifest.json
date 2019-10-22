@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "Duplicate Image Search",
+  "description": "Opera browser extension for duplicate image search",
+  "homepage_url": "https://wdmg.com.ua/resources/extensions/duplicate-image-search",
+  "version": "1.0.0",
+  "default_locale": "en",
+  "content_scripts": [
+    {
+      "js": ["content_script.js"],
+      "run_at": "document_start",
+      "matches": ["<all_urls>"],
+      "all_frames": true
+    }
+  ],
+  "background": {
+    "page": "background.html"
+  },
+  "icons": {
+    "32": "img/Icon-32.png",
+    "48": "img/Icon-48.png",
+    "64": "img/Icon-64.png",
+    "96": "img/Icon-96.png",
+    "128": "img/Icon-128.png",
+    "256": "img/Icon-256.png"
+  },
+  "permissions": [
+    "http://*/*", "*://*/*",
+    "contextMenus"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "imagesearch",
+  "version": "1.0.0",
+  "description": "Firefox browser extension for duplicate image search",
+  "main": "background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "grunt": "^1.0.4",
+    "grunt-cli": "^1.3.2",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-zip": "^0.18.2"
+  }
+}
